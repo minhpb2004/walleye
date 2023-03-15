@@ -70,3 +70,8 @@ Finally, test the Nginx configuration with the following command:
 ```
 sudo nginx -t
 ```
+If the configuration is valid, restart Nginx with the following command:
+```
+sudo systemctl restart nginx
+```
+Your application is now accessible through Nginx at `http://YOUR_DOMAIN_NAME/`.
