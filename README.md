@@ -25,3 +25,10 @@ Before installing the project dependencies, it's a good idea to set up a Python 
 python3 -m venv env
 source env/bin/activate
 ```
+The first command creates a new virtual environment in a directory called `env` within the project directory. The second command activates the virtual environment, which changes your shell's Python interpreter to use the one installed in the virtual environment. Once the virtual environment is activated, you can install the project dependencies without affecting other Python projects on your server.
+# Step 4: Install project dependencies
+
+With the virtual environment activated, you can now install the project dependencies listed in the requirements.txt file. Run the following command from the project directory:
+```
+pip install -r requirements.txt
+```
