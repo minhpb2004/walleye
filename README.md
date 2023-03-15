@@ -16,7 +16,7 @@ sudo apt install git
 ```
 Next, navigate to the directory where you want to clone the repository and run the following command:
 ```
-git clone https://github.com/minhpbvt/web-detecting-cracks-on-wall.git
+git clone https://github.com/minhpbvt/walleye.git
 ```
 # Step 3: Set up a Python virtual environment
 
