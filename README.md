@@ -31,7 +31,7 @@ The first command creates a new virtual environment in a directory called `env` 
 
 With the virtual environment activated, you can now install the project dependencies listed in the `requirements.txt` file. Run the following command from the project directory:
 ```
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 This will install all the necessary Python packages required to run the application.
 # Step 5: Configure Nginx
