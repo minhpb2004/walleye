@@ -22,6 +22,7 @@ git clone https://github.com/minhpbvt/web-detecting-cracks-on-wall.git
 
 Before installing the project dependencies, it's a good idea to set up a Python virtual environment to keep them isolated from other Python projects on your server. To do this, navigate to the project directory and run the following commands:
 ```
+cd walleye
 python3 -m venv env
 source env/bin/activate
 ```
