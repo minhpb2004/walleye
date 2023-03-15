@@ -96,5 +96,24 @@ ExecStart=/path/to/project/env/bin/gunicorn --workers 3 --bind unix:/path/to/pro
 
 [Install]
 WantedBy=multi-user.target
-
 ```
+Replace `YOUR_USERNAME` with your server's username and `/path/to/project` with the absolute path to your project directory.
+
+Once you have finished editing the service file, save and close it. Then, reload systemd to read the new service file with the following command:
+```
+sudo systemctl daemon-reload
+```
+Finally, start the Gunicorn service with the following command:
+```
+sudo systemctl start myapp
+```
+Your Flask application is now running with Gunicorn and accessible through Nginx.
+# Step 7: Test the application
+
+To test your application, open a web browser and navigate to `http://YOUR_DOMAIN_NAME/`. If everything is working correctly, you should see a page that displays the video stream from your webcam.
+
+To test the image processing functionality, click the "Capture" button to take a snapshot of the current video frame. Then, click the "Process" button to process the captured image using OpenCV. If everything is working correctly, you should see the processed image displayed on the page.
+
+To test the image upload functionality, click the "Choose File" button and select an image file from your local filesystem. Then, click the "Upload" button to upload the selected image to the server. If everything is working correctly, you should see the uploaded image displayed on the page with its appropriate result.
+
+Congratulations, your application is now up and running
