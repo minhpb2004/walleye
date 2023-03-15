@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OpenCV Web Demo</title>
+</head>
+<body>
+    <h1>OpenCV Web Demo</h1>
+    <h2>Camera</h2>
+    <video id="video" width="640" height="480"></video>
+    <canvas id="canvas" width="640" height="480"></canvas>
+    <h2>Upload Image</h2>
+    <input type="file" id="input">
+    <canvas id="canvas2"></canvas>
+    <button id="button">Process Image</button>
+    <script src="{{ url_for('static', filename='camera.js') }}"></script>
+    <script src="{{ url_for('static', filename='upload.js') }}"></script>
+    <script src="{{ url_for('static', filename='process.js') }}"></script>
+</body>
+</html>
