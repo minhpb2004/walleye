@@ -69,7 +69,7 @@ sudo ln -s /etc/nginx/sites-available/myapp /etc/nginx/sites-enabled/
 ```
 Finally, test the Nginx configuration with the following command:
 ```
-sudo nginx -t
+sudo nginx -t && nginx -s reload
 ```
 If the configuration is valid, restart Nginx with the following command:
 ```
