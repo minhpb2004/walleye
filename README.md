@@ -75,3 +75,26 @@ If the configuration is valid, restart Nginx with the following command:
 sudo systemctl restart nginx
 ```
 Your application is now accessible through Nginx at `http://YOUR_DOMAIN_NAME/`.
+# Step 6: Configure Gunicorn
+
+Gunicorn is a Python WSGI HTTP server that will serve your Flask application. Begin by creating a new systemd service file for Gunicorn with the following command:
+```
+sudo nano /etc/systemd/system/myapp.service
+```
+In this file, paste the following configuration:
+```
+[Unit]
+Description=Gunicorn instance to serve myapp
+After=network.target
+
+[Service]
+User=YOUR_USERNAME
+Group=www-data
+WorkingDirectory=/path/to/project
+Environment="PATH=/path/to/project/env/bin"
+ExecStart=/path/to/project/env/bin/gunicorn --workers 3 --bind unix:/path/to/project/myapp.sock wsgi:app
+
+[Install]
+WantedBy=multi-user.target
+
+```
