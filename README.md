@@ -117,3 +117,23 @@ To test the image processing functionality, click the "Capture" button to take a
 To test the image upload functionality, click the "Choose File" button and select an image file from your local filesystem. Then, click the "Upload" button to upload the selected image to the server. If everything is working correctly, you should see the uploaded image displayed on the page with its appropriate result.
 
 Congratulations, your application is now up and running
+
+# Here's a summary of the necessary files for the project:
+
+•`index.html`: This file contains the HTML code for the webpage that displays the video feed from the webcam and allows the user to upload an image.
+
+•`style.css`: This file contains the CSS code for styling the HTML elements in index.html.
+
+•`camera.js`: This file contains the JavaScript code for capturing video from the user's webcam and rendering it on a canvas element.
+
+•`upload.js`: This file contains the JavaScript code for uploading an image selected by the user to the server using an XMLHttpRequest.
+
+•`process.js`: This file contains the JavaScript code for receiving the processed image from the server and rendering it on a canvas element.
+
+•`app.py`: This file contains the Flask application code for processing image uploads and serving the processed images.
+
+•`wsgi.py`: This file imports your Flask application and runs it using Gunicorn.
+
+•`requirements.txt`: This file contains a list of all the Python packages that need to be installed using a package manager like pip.
+
+•`nginx.conf`: This file contains the Nginx configuration for serving the static files and proxying requests to the Gunicorn server.
