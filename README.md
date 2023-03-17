@@ -1,3 +1,6 @@
+# Requirement
+Ubuntu 20.04
+
 # Step 1: Install Nginx and Gunicorn
 
 To get started, you'll need to install Nginx and Gunicorn on your Linux server. You can do this by running the following commands:
