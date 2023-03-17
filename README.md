@@ -39,7 +39,7 @@ This will install all the necessary Python packages required to run the applicat
 Next, you need to configure Nginx to serve your application. Begin by creating a new Nginx configuration file in the `/etc/nginx/sites-available` directory with the following command:
 
 ```
-sudo nano /etc/nginx/sites-available/myapp
+sudo nano /etc/nginx/sites-available/walleye
 ```
 
 In this file, paste the following configuration:
@@ -65,7 +65,7 @@ Replace `YOUR_DOMAIN_NAME` with your server's domain name or IP address. Also, r
 
 Once you have finished editing the configuration file, save and close it. Then, create a symbolic link to this file in the `/etc/nginx/sites-enabled` directory with the following command:
 ```
-sudo ln -s /etc/nginx/sites-available/myapp /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/walleye /etc/nginx/sites-enabled/
 ```
 Finally, test the Nginx configuration with the following command:
 ```
